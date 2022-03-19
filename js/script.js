@@ -13,8 +13,14 @@ function plantFlower(){
     localStorage.setItem("numberOfFlowers",numberOfFlowers);
     console.log("flower planted");
 }
+function updateThreshold(){
+    newThres=localStorage.getItem("waterThreshold");
+    if(newThres!=null){
+        threshold=newThres;
+    }
+}
 
-window.onload = setImage();
+window.onload = updateThreshold();
 
 function saveDate(){
     if(localStorage.getItem("date")==null){
