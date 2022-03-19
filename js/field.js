@@ -1,6 +1,11 @@
 let numberOfFlowers = localStorage.getItem("numberOfFlowers");
+if(numberOfFlowers == null){
+    numberOfFlowers = 0;
+}
 console.log(numberOfFlowers);
 let text = document.getElementById("flowertext");
+
+
 
 text.innerText = "You planted: " + numberOfFlowers + " flowers"; 
 

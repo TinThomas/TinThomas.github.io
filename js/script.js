@@ -35,10 +35,10 @@ function newDay(){
     waterComsuption = 0;
     havePlanted = false;
     lastPicture = "morning";
-    console.log("Water comsumtion restet");
-    console.log(waterCom);
-    console.log("have planted status");
-    console.log(havePlanted);
+    localStorage.setItem("waterComsuption",waterComsuption);
+    localStorage.setItem("date",new Date());
+    localStorage.setItem("havePlanted",havePlanted);
+    localStorage.setItem("lastPicture",lastPicture);
 }
 
 /**Does not work yet */
@@ -49,9 +49,12 @@ function checkNewDay(){
     }
 }
 
-
+/**Water consumtion does not get stored in local storage */
 function setImage(waterComsuption){
+    localStorage.getItem("waterComsuption",waterComsuption);
     waterComsuption += waterComsuption;
+    localStorage.setItem("waterComsuption",waterComsuption);
+    console.log(waterComsuption);
     var nowdate = new Date();
 
     var waketime = new Date();     
@@ -79,7 +82,7 @@ function setImage(waterComsuption){
             havePlanted=true;
         }
     }
-
+    localStorage.setItem("lastPicture",lastPicture);
     if(lastPicture=="morning"){
         document.getElementById("flowerImage").src = "Images/stage-1.png";
     }else if(lastPicture=="midday"){
