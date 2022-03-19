@@ -9,9 +9,11 @@ let lastPicture;
 let numberOfFlowers = 0;
 
 function plantFlower(){
+    numberOfFlowers = localStorage.getItem("numberOfFlowers");
     numberOfFlowers++;
     localStorage.setItem("numberOfFlowers",numberOfFlowers);
     console.log("flower planted");
+    console.log(numberOfFlowers);
 }
 function updateThreshold(){
     newThres=localStorage.getItem("waterThreshold");
@@ -32,13 +34,17 @@ function saveDate(){
 
 /**Needs to be called at start of day */
 function newDay(){
-    waterComsuption = 0;
-    havePlanted = false;
-    lastPicture = "morning";
-    localStorage.setItem("waterComsuption",waterComsuption);
-    localStorage.setItem("date",new Date());
-    localStorage.setItem("havePlanted",havePlanted);
-    localStorage.setItem("lastPicture",lastPicture);
+    let noFlowers = localStorage.getItem("numberOfFlowers");
+    localStorage.clear();
+    localStorage.setItem("numberOfFlowers", noFlowers);
+    localStorage.setItem("waterComsuption", 0);
+    // waterComsuption = 0;
+    // havePlanted = false;
+    // lastPicture = "morning";
+    // localStorage.setItem("waterComsuption",waterComsuption);
+    // localStorage.setItem("date",new Date());
+    // localStorage.setItem("havePlanted",havePlanted);
+    // localStorage.setItem("lastPicture",lastPicture);
 }
 
 /**Does not work yet */

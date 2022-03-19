@@ -7,6 +7,7 @@ output.innerHTML = slider.value;
 
 slider.oninput = function() {
   output.innerHTML = this.value;
+  localStorage.setItem("waterThreshold",this.value);
 }
 
 const data = {
@@ -44,4 +45,5 @@ const config = {
 };
 
 const myChart = new Chart(ctx, config);
-  localStorage.setItem("waterThreshold",this.value);
+Chart.defaults.font.family = "'Cabe Rawit', sans-serif";
+Chart.defaults.font.size = 14;

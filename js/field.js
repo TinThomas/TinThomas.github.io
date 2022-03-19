@@ -15,6 +15,7 @@ function insertFlower(){
     var flowerobject = document.getElementById("flower"); 
     var flowerarea = document.getElementById("fieldbox");
     var clonedFlower = flowerobject.cloneNode(true);
+    clonedFlower.style.display = "block";
     flowerarea.appendChild(clonedFlower);
     console.log("cloned");
 }
