@@ -1,4 +1,12 @@
 - To DO on set image
-    -    Make it update at certain intevals
-    -    Only change picutre when water variable is not to high
     -   call field function. 
+
+- Field funtion
+
+
+- gem mænden af flowers i local stoeage
+- Put blosmter på field
+- Sørg for at kun baggrund sættes på flowers
+- Gemme water com
+- gemme LastPIc
+- gemme have planted

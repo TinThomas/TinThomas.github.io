@@ -1,26 +1,46 @@
-/* body{
-    background-image: url(/Images/Background.jpg);
+body{
+    background-image: url(/Images/flower\ background.png);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
 
     margin: 0;
-    height: 100%;
-} */
+
+    /*Make body fill entire screen so we can swipe on it*/
+    height: 100vh;
+}
+
+#fieldbox{
+    position:absolute;
+    bottom: 30px;
+    width: 100%;
+    height: 20%;
+}
+
+#flowerImage{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#flower{
+    width: 100px;
+    height: 100px;
+}
 
 .picture-morning {
-    background-image: url(/Images/placeholder.png);
+    background-image: url(/Images/stage\ 1.png);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
 }
 
 .picture-midday{
-    background-image: url(/Images/toastdog.jpeg);
+    background-image: url(/Images/stage\ 2.png);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
 }
 
 .picture-night{
-    background-image: url(/Images/test1.png);
+    background-image: url(/Images/full\ stage.png);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
 }
@@ -75,8 +95,8 @@
 #weekday {
     transform: translateY(3.5vh);
     float: left;
-    margin-left: -3.5vw;
-    line-height: 6vw;
+    margin-left: -3.7vw;
+    line-height: 5.1vw;
     font-size: 4vh;
 }
 .grid-container{
