@@ -7,9 +7,20 @@ body{
 
     /*Make body fill entire screen so we can swipe on it*/
     height: 100vh;
+    font-family: 'Cabe Rawit', sans-serif;
+    display: flex;
+}
+
+h1 {
+    width: 20vw;
+    text-align: center;
+    margin: auto;
+    font-size: 200px;
 }
 
 #fieldbox{
+    display: flex;
+    margin-left: 500px;
     position:absolute;
     bottom: 30px;
     width: 100%;
@@ -23,8 +34,9 @@ body{
 }
 
 #flower{
-    width: 100px;
-    height: 100px;
+    display: flex;
+    width: 1000px;
+    height: 1000px;
 }
 
 .picture-morning {

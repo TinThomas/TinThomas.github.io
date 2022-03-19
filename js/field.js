@@ -1,5 +1,8 @@
 let numberOfFlowers = localStorage.getItem("numberOfFlowers");
 console.log(numberOfFlowers);
+let text = document.getElementById("flowertext");
+
+text.innerText = "You planted: " + numberOfFlowers + " flowers"; 
 
 function insertFlower(){
     var flowerobject = document.getElementById("flower"); 
@@ -12,3 +15,5 @@ function insertFlower(){
 for(var i = 0; i < numberOfFlowers; i++){
     insertFlower();
 }
+
+
