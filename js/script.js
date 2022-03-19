@@ -1,7 +1,7 @@
 let infopage = document.getElementById("infopage");
 let pageprogress = document.getElementById("pageprogress");
 let input = document.getElementById("myInput");
-let waterComsuption;
+let waterComsuption = 0;
 let threshold = 100;
 let havePlanted = false;
 let date = saveDate();
@@ -50,9 +50,10 @@ function checkNewDay(){
 }
 
 /**Water consumtion does not get stored in local storage */
-function setImage(waterComsuption){
-    localStorage.getItem("waterComsuption",waterComsuption);
-    waterComsuption += waterComsuption;
+function setImage(waterUsedSinceLast){
+    waterComsuption = parseInt(localStorage.getItem("waterComsuption",waterComsuption));
+    console.log(waterComsuption);
+    waterComsuption += waterUsedSinceLast;
     localStorage.setItem("waterComsuption",waterComsuption);
     console.log(waterComsuption);
     var nowdate = new Date();

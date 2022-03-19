@@ -6,8 +6,10 @@ console.log(numberOfFlowers);
 let text = document.getElementById("flowertext");
 
 
-
 text.innerText = "You planted: " + numberOfFlowers + " flowers"; 
+if(numberOfFlowers == 1){
+    text.innerText = "You planted: " + numberOfFlowers + " flower";
+}
 
 function insertFlower(){
     var flowerobject = document.getElementById("flower"); 
