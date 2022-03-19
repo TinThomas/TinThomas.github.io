@@ -1,5 +1,4 @@
 body{
-    font-family: 'Cabe Rawit', sans-serif;
     margin: 0;
     /*Make body fill entire screen so we can swipe on it*/
     height: 90vh;
@@ -10,6 +9,15 @@ body{
     flex-direction: column;
     text-align: center;
     overflow: hidden;
+    font-family: 'Cabe Rawit', sans-serif;;
+    
+}
+
+@font-face {
+    font-family: 'Cabe Rawit', sans-serif;
+    src: url(/font/CabeRawit-Regular.woff);
+    src: url(/font/CabeRawit-Regular.woff2);
+    src: url(/font/CabeRawit-Regular.ttf);
 }
 
 @keyframes fadeInAnimation {
