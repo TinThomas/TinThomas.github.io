@@ -46,4 +46,3 @@ const config = {
 
 const myChart = new Chart(ctx, config);
 Chart.defaults.font.size = 14;
-localStorage.setItem("waterThreshold",this.value);

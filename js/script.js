@@ -38,13 +38,6 @@ function newDay(){
     localStorage.clear();
     localStorage.setItem("numberOfFlowers", noFlowers);
     localStorage.setItem("waterComsuption", 0);
-    // waterComsuption = 0;
-    // havePlanted = false;
-    // lastPicture = "morning";
-    // localStorage.setItem("waterComsuption",waterComsuption);
-    // localStorage.setItem("date",new Date());
-    // localStorage.setItem("havePlanted",havePlanted);
-    // localStorage.setItem("lastPicture",lastPicture);
 }
 
 /**Does not work yet */
@@ -92,6 +85,10 @@ function setImage(waterUsedSinceLast){
             havePlanted=true;
         }
     }
+    else{
+        lastPicture = localStorage.getItem("lastPicture");
+    }
+    
     localStorage.setItem("lastPicture",lastPicture);
     if(lastPicture=="morning"){
         document.getElementById("flowerImage").src = "Images/stage-1.png";
@@ -100,6 +97,8 @@ function setImage(waterUsedSinceLast){
     }else if(lastPicture=="night"){
         document.getElementById("flowerImage").src = "Images/stage-3.png";
     }
+
+    
 }
 
 /*Check for time of day every 30min.*/

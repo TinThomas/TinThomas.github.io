@@ -6,9 +6,10 @@ body{
     margin: 0;
 
     /*Make body fill entire screen so we can swipe on it*/
-    height: 100vh;
+    height: 90vh;
     font-family: 'Cabe Rawit', sans-serif;
     display: flex;
+    overflow: hidden;
 }
 
 h1 {

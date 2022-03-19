@@ -9,6 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
+    overflow: hidden;
 }
 
 @keyframes fadeInAnimation {
@@ -49,7 +50,7 @@ h1 {
 
 #middle-content {
     display: flex;
-    height: 60vh;
+    height: 55vh;
     width: 90vw;
     margin: auto;
     flex-direction: row;
@@ -59,12 +60,12 @@ h1 {
     display: flex;
     margin: auto;
     width: 40vw;
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin-right: 20px;
 }
 
 #chart {
-    width: 42vw;
+    width: 35vw;
     margin: auto;
 }
 
