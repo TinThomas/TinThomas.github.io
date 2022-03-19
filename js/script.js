@@ -58,6 +58,9 @@ function checkNewDay(){
 /**Water consumtion does not get stored in local storage */
 function setImage(waterUsedSinceLast){
     waterComsuption = parseInt(localStorage.getItem("waterComsuption",waterComsuption));
+    if(isNaN(waterComsuption)){
+        waterComsuption = 0;
+    }
     console.log(waterComsuption);
     waterComsuption += waterUsedSinceLast;
     localStorage.setItem("waterComsuption",waterComsuption);
