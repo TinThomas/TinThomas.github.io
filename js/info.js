@@ -34,7 +34,7 @@ const config = {
     responsive: true,
     plugins: {
       legend: {
-        position: 'top',
+        position: 'left',
       },
       title: {
         display: true,
@@ -45,5 +45,5 @@ const config = {
 };
 
 const myChart = new Chart(ctx, config);
-Chart.defaults.font.family = "'Cabe Rawit', sans-serif";
 Chart.defaults.font.size = 14;
+localStorage.setItem("waterThreshold",this.value);

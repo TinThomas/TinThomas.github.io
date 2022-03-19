@@ -12,7 +12,7 @@ if(numberOfFlowers == 1){
 }
 
 function insertFlower(){
-    var flowerobject = document.getElementById("flower"); 
+    var flowerobject = document.querySelector(".flower"); 
     var flowerarea = document.getElementById("fieldbox");
     var clonedFlower = flowerobject.cloneNode(true);
     clonedFlower.style.display = "block";

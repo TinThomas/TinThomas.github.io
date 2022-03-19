@@ -20,7 +20,8 @@ h1 {
 
 #fieldbox{
     display: flex;
-    margin-left: 500px;
+    justify-content: center;
+    align-items: center;
     position:absolute;
     bottom: 30px;
     width: 100%;
@@ -33,10 +34,11 @@ h1 {
     align-items: flex-end;
 }
 
-#flower{
+.flower{
     display: flex;
     width: 100px;
     height: 100px;
+    
 }
 
 .picture-morning {
