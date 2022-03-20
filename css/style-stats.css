@@ -9,9 +9,15 @@ body{
     flex-direction: column;
     text-align: center;
     overflow: hidden;
-    font-family: 'Cabe Rawit', 'Comic Sans MS', sans-serif;
+    font-family: 'Cabe Rawit', 'Rosemary', 'Droid-sans', 'Droidsans', 'Comic Sans MS' sans-serif;
     
 }
+
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url("comic-sans-ms/comici.ttf");
+}
+
 
 @keyframes fadeInAnimation {
     0% {
