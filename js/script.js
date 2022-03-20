@@ -30,6 +30,9 @@ function saveDate(){
     }
 }
 
+function muteAudio(){
+    
+}
 
 
 /**Needs to be called at start of day */

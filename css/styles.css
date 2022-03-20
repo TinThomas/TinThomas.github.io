@@ -1,4 +1,7 @@
 body{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     background-image: url(/Images/flower\ background.png);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
@@ -17,6 +20,15 @@ body{
     src: url(/font/CabeRawit-Regular.woff);
     src: url(/font/CabeRawit-Regular.woff2);
     src: url(/font/CabeRawit-Regular.ttf);
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 h1 {
@@ -40,13 +52,35 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    -webkit-animation: rotation 4s infinite linear;
+    transform-origin: bottom;
 }
+
+@-webkit-keyframes rotation {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    25% {
+      -webkit-transform: rotate(3deg);
+    }
+    50% {
+      -webkit-transform: rotate(0deg);
+    }
+    75% {
+      -webkit-transform: rotate(-3deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+    }
+  }
 
 .flower{
     display: flex;
     width: 100px;
     height: 100px;
-    
+    -webkit-animation: rotation 4s infinite linear;
+    transform-origin: bottom;
 }
 
 .picture-morning {
