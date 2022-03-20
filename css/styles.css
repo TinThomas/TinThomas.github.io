@@ -10,7 +10,7 @@ body{
 
     /*Make body fill entire screen so we can swipe on it*/
     height: 90vh;
-    font-family: 'Cabe Rawit', sans-serif;
+    font-family: 'Cabe Rawit', 'Rosemary', 'Droid-sans', 'Droidsans', 'Comic Sans MS' sans-serif;
     display: flex;
     overflow: hidden;
 }

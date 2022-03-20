@@ -38,7 +38,7 @@ const config = {
       },
       title: {
         display: true,
-        text: 'Water Usage'
+        text: 'Water Usage Pie Chart',
       }
     }
   },

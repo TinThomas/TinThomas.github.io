@@ -26,7 +26,7 @@ window.onload = updateThreshold();
 
 function saveDate(){
     if(localStorage.getItem("date")==null){
-        localStorage.setItem("date",new Date());
+        localStorage.setItem("date",new Date().getDate());
     }
 }
 
@@ -41,13 +41,15 @@ function newDay(){
     localStorage.clear();
     localStorage.setItem("numberOfFlowers", noFlowers);
     localStorage.setItem("waterComsuption", 0);
+    localStorage.setItem("lastPicture", "morning");
 }
 
 /**Does not work yet */
 function checkNewDay(){
-    if(window.localStorage.getItem("date").getDate() < new Date().getDate()){
+    let oldDate = localStorage.getItem("date");
+    if(oldDate < new Date().getDate()){
         newDay();
-        date = new Date();
+        localStorage.setItem("date", new Date().getDate());
     }
 }
 
@@ -72,6 +74,8 @@ function setImage(waterUsedSinceLast){
     
     var bedtime = new Date();     
     bedtime.setHours(22);
+
+    checkNewDay();
     
     if(waketime < nowdate  && nowdate < midday && nowdate < bedtime && waterComsuption < threshold){
         console.log("morning");
