@@ -13,13 +13,6 @@ body{
     
 }
 
-@font-face {
-    font-family: 'Cabe Rawit', 'Comic Sans MS', sans-serif;
-    src: url(/font/CabeRawit-Regular.woff);
-    src: url(/font/CabeRawit-Regular.woff2);
-    src: url(/font/CabeRawit-Regular.ttf);
-}
-
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
