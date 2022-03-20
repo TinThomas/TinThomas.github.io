@@ -53,7 +53,7 @@ h1 {
     justify-content: center;
     align-items: flex-end;
 
-    -webkit-animation: rotation 4s infinite linear;
+    -webkit-animation: rotation 8s infinite linear;
     transform-origin: bottom;
 }
 
@@ -62,13 +62,13 @@ h1 {
       -webkit-transform: rotate(0deg);
     }
     25% {
-      -webkit-transform: rotate(3deg);
+      -webkit-transform: rotate(3.7deg);
     }
     50% {
       -webkit-transform: rotate(0deg);
     }
     75% {
-      -webkit-transform: rotate(-3deg);
+      -webkit-transform: rotate(-3.5deg);
     }
     100% {
       -webkit-transform: rotate(0deg);
@@ -77,9 +77,9 @@ h1 {
 
 .flower{
     display: flex;
-    width: 100px;
-    height: 100px;
-    -webkit-animation: rotation 4s infinite linear;
+    width: 110px;
+    height: 110px;
+    -webkit-animation: rotation 5s infinite linear;
     transform-origin: bottom;
 }
 
@@ -215,22 +215,4 @@ h1 {
 #can{
     position: absolute;
     right: 0px;
-}
-@keyframes animate {
-    0%
-    {
-        background-position: 0 100 px;
-    }
-    10%
-    {
-        background-position: 0 100 px;
-    }
-    40%
-    {
-        background-position: 1000px -70px;
-    }
-    0%
-    {
-        background-position: 2000px -80px;
-    }
 }

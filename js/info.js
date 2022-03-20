@@ -15,7 +15,7 @@ const data = {
   datasets: [
     {
       label: 'Water Consumption',
-      data: [82, 200, 124, 20, 10],
+      data: [10, 14, 30, 14, 5],
       backgroundColor: [
         'rgb(255, 20, 20)',
         'rgb(255, 150, 0)',
